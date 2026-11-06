@@ -4,13 +4,8 @@ import { Eyebrow, SignalBar } from "@/components/fx/Hud";
 import { Reveal } from "@/components/fx/Reveal";
 import { chapters, studio } from "@/data/studio";
 
-async function getYear() {
-  "use cache";
-  return new Date().getFullYear();
-}
-
-export async function SiteFooter() {
-  const year = await getYear();
+export function SiteFooter() {
+  const year = new Date().getFullYear();
   return (
     <footer className="relative mt-auto overflow-hidden border-t border-[var(--line)] bg-[var(--surface)]">
       <div

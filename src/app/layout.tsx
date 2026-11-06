@@ -27,8 +27,13 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://marwan-ahmed-dev.github.io/Tovix";
+
+const openGraphImage = new URL("brand/tovix-mark.png", `${siteUrl.replace(/\/?$/, "/")}`).href;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://tovix.studio"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Tovix Games",
     template: "%s · Tovix Games",
@@ -40,14 +45,14 @@ export const metadata: Metadata = {
     title: "Tovix Games",
     description: studio.tagline,
     siteName: "Tovix Games",
-    images: [{ url: "/brand/tovix-mark.png", width: 1024, height: 1024 }],
+    images: [{ url: openGraphImage, width: 1024, height: 1024 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Tovix Games",
     description: studio.tagline,
-    images: ["/brand/tovix-mark.png"],
+    images: [openGraphImage],
   },
 };
 
