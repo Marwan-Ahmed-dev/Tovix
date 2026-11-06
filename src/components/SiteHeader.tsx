@@ -8,6 +8,7 @@ import { AnchorLink } from "@/components/fx/AnchorLink";
 import { Magnetic } from "@/components/fx/Magnetic";
 import { useActiveSection } from "@/lib/useActiveSection";
 import { chapters, nav } from "@/data/studio";
+import { publicBasePath } from "@/lib/basePath";
 
 function UtcClock() {
   const [time, setTime] = useState<string | null>(null);
@@ -73,7 +74,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-5 md:h-20 md:px-10">
         <Link href="/" className="group flex min-w-0 items-center gap-3" aria-label="Tovix home">
           <Image
-            src="/brand/tovix-mark-512.png"
+            src={`${publicBasePath}/brand/tovix-mark-512.png`}
             alt=""
             width={34}
             height={34}

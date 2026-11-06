@@ -3,6 +3,7 @@
 import { motion, useReducedMotion, type MotionValue } from "motion/react";
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import { publicBasePath } from "@/lib/basePath";
 import { useIsBooted } from "@/lib/useBootReady";
 
 type IgnitionMarkProps = {
@@ -36,7 +37,7 @@ export function IgnitionMark({
 }: IgnitionMarkProps) {
   const reduce = useReducedMotion();
   const booted = useIsBooted();
-  const src = "/brand/tovix-mark-512.png";
+  const src = `${publicBasePath}/brand/tovix-mark-512.png`;
 
   // On a first visit the emblem waits for the ignition veil to clear.
   const t0 = booted ? 0 : 1.75;
