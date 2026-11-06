@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tovix mark mono white">
+  <path
+    fill="#FFFFFF"
+    fill-rule="evenodd"
+    d="M96 112 L256 72 L416 112 L416 140 L360 176 L296 176 L296 400 L256 420 L216 400 L216 176 L152 176 L96 140 Z
+       M248 96 L248 400 L264 400 L264 96 Z"
+  />
+  <!-- Center gap preserved as cut -->
+  <rect x="248" y="80" width="16" height="340" fill="#000000"/>
+</svg>

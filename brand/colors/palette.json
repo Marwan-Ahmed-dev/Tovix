@@ -1,0 +1,20 @@
+{
+  "name": "Tovix Split Voltage",
+  "colors": {
+    "bg": "#000000",
+    "surface": "#0A0A0C",
+    "text": "#F4F6F8",
+    "accentRed": "#FF1A33",
+    "accentBlue": "#00E5FF",
+    "muted": "#8A9099",
+    "border": "#1A1A1F"
+  },
+  "glows": {
+    "red": "rgba(255, 26, 51, 0.35)",
+    "blue": "rgba(0, 229, 255, 0.35)"
+  },
+  "fonts": {
+    "display": "Oxanium",
+    "body": "Rajdhani"
+  }
+}
